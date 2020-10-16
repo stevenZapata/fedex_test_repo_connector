@@ -44,11 +44,11 @@
          {
             "type"                      : "json",
             "authorizeContent"          : "false",
-            "pathRegex"                 : "Fedex_test_\d+.json",
+            "pathRegex"                 : "Fedex_test_\\d+.json",
             "translationPathExpression" : "${originalFile.path}${originalFile.baseName}${locale}.${originalFile.extension}",
             "smartlingDirectives"       : [
                 "smartling.placeholder_format_custom = (\\$\\{[^\\}]+?\\})|(&[\\w\\d]+?;)",
-                "smartling.namespace = false"
+                "smartling.variants_enabled = true"
            ]
          }
          
